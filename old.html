@@ -1,0 +1,87 @@
+<html id="main">
+  <head>
+    <style>#main {
+   position: relative;
+}
+#main:after {
+    content : "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("background.jpg"); 
+    width: 100%;
+    height: 100%;
+    opacity : 0.5;
+    z-index: -1; background-size: cover;
+
+}
+body {
+  height: 100%;
+}
+</style>
+    <meta charset="utf-8">
+   <meta name="google-site-verification" content="jUCV2Ssynoab5oLuQva2eBjHN_ZMRX1wq5qutL-mX5w" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-108048997-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-108048997-1');
+</script>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="js/tabletop1.3.4.js"></script>
+    <script type="text/javascript" src="js/sheetsee.js"></script>
+    <script type="text/javascript" src="js/socialbits.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <title>Amir Bar</title>
+  </head>
+  <body>
+    <!-- HTML -->
+    <div class="container">
+    <img src="https://avatars0.githubusercontent.com/u/6403606?v=4&amp;s=400&amp;u=59d49932a0ae81fa8edb67480cc30c38e8d60298" style="
+      border-radius: 50%;
+      margin-bottom: 20px;
+      margin-top: 50px;
+      height: 150px;                                                                                                                                    
+                                                                                                                                      
+    ">
+      <div class="bio">
+        <h1>Amir Bar</h1>
+        <p>I am a Machine Learning engineer living in Berkeley, CA. I work at Zebra Medical Vision, helping to make healthcare more efficient and affordable.</p>
+        <ul class="inline-list">
+          <li><a href="https://twitter.com/_amirbar">Twitter</a></li>
+          <li><a href="https://github.com/amirbar/">GitHub</a></li>
+          <li><a href="http://www.linkedin.com/in/amirbar">LinkedIn</a></li>
+          <li><a href="https://stackoverflow.com/users/3932212/amirbar">Stack Overflow</a></li>
+        </ul>
+      </div>
+
+      <article id="tweet"><span class="load flash animated">LOADING...</span></article>
+
+    </div>
+
+    <!-- Templates -->
+    <script id="tweet" type="text/html">
+      {{#rows}}
+        <p><span class="quote">&ldquo;</span> {{{tweet}}} <span class="quote"> &rdquo;</span></p>
+
+      {{/rows}}
+    </script>
+
+    <!-- JavaScript -->
+      <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function() {
+          var URL2 = '1bDODDofnB_ixxoLSW5bLsRH7-AokwiJAL2_93DwHJDM' // tweet
+
+          Tabletop.init({ key: URL2, callback: buildTweet,  simpleSheet: true })
+        })
+      </script>
+
+  </body>
+</html>

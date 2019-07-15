@@ -1,27 +1,84 @@
-<html id="main">
-  <head>
-    <style>#main {
-   position: relative;
-}
-#main:after {
-    content : "";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-image: url("background.jpg"); 
-    width: 100%;
-    height: 100%;
-    opacity : 0.5;
-    z-index: -1; background-size: cover;
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
 
-}
-body {
-  height: 100%;
-}
-</style>
-    <meta charset="utf-8">
-   <meta name="google-site-verification" content="jUCV2Ssynoab5oLuQva2eBjHN_ZMRX1wq5qutL-mX5w" />
+<head>
+  <meta name=viewport content="width=800">
+  <style type="text/css">
+    /* Color scheme stolen from Sergey Karayev */
+
+    a {
+      color: #1772d0;
+      text-decoration: none;
+    }
+
+    a:focus,
+    a:hover {
+      color: #f09228;
+      text-decoration: none;
+    }
+
+    body,
+    td,
+    th,
+    tr,
+    p,
+    a {
+      font-family: 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 14px
+    }
+
+    strong {
+      font-family: 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 14px;
+    }
+
+    heading {
+      font-family: 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 22px;
+    }
+
+    papertitle {
+      font-family: 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 14px;
+      font-weight: 700
+    }
+
+    name {
+      font-family: 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 32px;
+    }
+
+    .one {
+      width: 160px;
+      height: 160px;
+      position: relative;
+    }
+
+    .two {
+      width: 160px;
+      height: 160px;
+      position: absolute;
+      transition: opacity .2s ease-in-out;
+      -moz-transition: opacity .2s ease-in-out;
+      -webkit-transition: opacity .2s ease-in-out;
+    }
+
+    .fade {
+      transition: opacity .2s ease-in-out;
+      -moz-transition: opacity .2s ease-in-out;
+      -webkit-transition: opacity .2s ease-in-out;
+    }
+
+    span.highlight {
+      background-color: #ffffd0;
+    }
+  </style>
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <title>Amir Bar</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+     <meta name="google-site-verification" content="jUCV2Ssynoab5oLuQva2eBjHN_ZMRX1wq5qutL-mX5w" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108048997-1"></script>
 <script>
@@ -32,56 +89,225 @@ body {
   gtag('config', 'UA-108048997-1');
 </script>
 
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-    <script type="text/javascript" src="js/tabletop1.3.4.js"></script>
-    <script type="text/javascript" src="js/sheetsee.js"></script>
-    <script type="text/javascript" src="js/socialbits.js"></script>
-    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,900' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="icon" href="favicon.png" type="image/x-icon">
-    <title>Amir Bar</title>
-  </head>
-  <body>
-    <!-- HTML -->
-    <div class="container">
-    <img src="https://avatars0.githubusercontent.com/u/6403606?v=4&amp;s=400&amp;u=59d49932a0ae81fa8edb67480cc30c38e8d60298" style="
+
+
+</head>
+
+
+<body>
+  <table width="800" border="0" align="center" cellspacing="0" cellpadding="0">
+    <tr>
+      <td>
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+          <tr>
+            <td width="67%" valign="middle">
+              <p align="center">
+                <name>Amir Bar</name>
+              </p>
+              <p>I am a machine learning researcher at <a href="https://us.zebra-med.com/">Zebra Medical</a> and lead Zebra's ML team in Berkeley CA.
+              </p>
+              <p>
+                I graduated from <a href="https://en.cs.tau.ac.il/computer">Tel Aviv University</a>, with MSc in Computer Science. During my Master I was advised by <a href="http://cs.tau.ac.il/~wolf/">Lior Wolf</a>.
+              </p>
+              <p align=center>
+                <a href="mailto:amirb4r@gmail.com">Email</a> &nbsp/&nbsp
+                <a href="https://github.com/amirbar">GitHub</a> &nbsp/&nbsp
+                <a href="https://scholar.google.co.il/citations?user=L__n1LUAAAAJ&hl=en">Google Scholar</a> &nbsp/&nbsp
+                <a href="https://www.linkedin.com/in/amirbar/"> LinkedIn </a>
+              </p>
+            </td>
+            <td width="33%" style="text-align: center">
+              <img src="https://avatars0.githubusercontent.com/u/6403606?v=4&amp;s=400&amp;u=59d49932a0ae81fa8edb67480cc30c38e8d60298" style="
       border-radius: 50%;
       margin-bottom: 20px;
       margin-top: 50px;
-      height: 150px;                                                                                                                                    
-                                                                                                                                      
+      height: 150px;
+
     ">
-      <div class="bio">
-        <h1>Amir Bar</h1>
-        <p>I am a Machine Learning engineer living in Berkeley, CA. I work at Zebra Medical Vision, helping to make healthcare more efficient and affordable.</p>
-        <ul class="inline-list">
-          <li><a href="https://twitter.com/_amirbar">Twitter</a></li>
-          <li><a href="https://github.com/amirbar/">GitHub</a></li>
-          <li><a href="http://www.linkedin.com/in/amirbar">LinkedIn</a></li>
-          <li><a href="https://stackoverflow.com/users/3932212/amirbar">Stack Overflow</a></li>
-        </ul>
-      </div>
+            </td>
+          </tr>
+        </table>
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+          <tr>
+            <td width="100%" valign="middle">
+              <heading>Research</heading>
+            </td>
+          </tr>
+        </table>
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
 
-      <article id="tweet"><span class="load flash animated">LOADING...</span></article>
+          <!-- Learning Individual Styles of Conversational Gesture -->
+          <tr>
+            <td width="35%">
+              <div>
+                <img src='images/gestures_CVPR_2019_demo.gif' style="width: 100%">
+              </div>
+            </td>
+            <td valign="middle" width="100%">
+              <p>
+                <a href="https://arxiv.org/abs/1906.04160">
+                  <papertitle>Learning Individual Styles of Conversational Gesture</papertitle> &nbsp; &nbsp; <img src="images/new_animated.gif" />
+                </a>
+                <br>
+                Shiry Ginosar*, <strong> Amir Bar*</strong>, Gefen Kohavi, Caroline Chan, Andrew Owens, Jitendra Malik
+                <br>
+                <em>CVPR</em>, 2019
+                <br>
+                <a href="https://www.sciencemag.org/news/2019/06/watch-artificial-intelligence-predict-conan-o-brien-s-gestures-just-sound-his-voice">Press</a> |
+                <a href="https://people.eecs.berkeley.edu/~shiry/projects/speech2gesture/index.html">Project Page</a> |
+                <a href="https://github.com/amirbar/speech2gesture">Code</a> |
+                <a href="https://drive.google.com/drive/folders/1qvvnfGwas8DUBrwD4DoBnvj8anjSLldZ?usp=sharing">Data</a>
+                <p>We predict plausible gestures to go along with someone's speech.
+                </p>
+            </td>
+          </tr>
 
-    </div>
+          <!-- Improved ICH classification using task-dependent learning -->
+          <tr >
+            <td style="text-align: center; width: 35%">
+              <div>
+                <img src='images/ich.png' style="width: 70%">
+              </div>
+            </td>
+            <td valign="middle" style="width: 65%;">
+              <p>
+                <a href="https://arxiv.org/abs/1907.00148">
+                  <papertitle>Improved ICH classification using task-dependent learning</papertitle> &nbsp; &nbsp;<img src="images/new_animated.gif" />
+                </a>
+                <br>
+                <strong>Amir Bar</strong>, Michal Mauda-Havakuk, Yoni Turner, Michal Safadi, Eldad Elnekave
+                <br>
+                <em>ISBI</em>, 2019
+                <br>
+                <a href="https://sg.finance.yahoo.com/news/zebra-medical-vision-announces-ce-140400903.html">Press</a>
+                <p>Intracranial hemorrhage (ICH) is among the most critical and timesensitive findings to be detected on Head CT. We present a new architecture designed for optimal triaging of Head CTs, with the goal of decreasing the time from CT acquisition to accurate ICH detection. These results are comparable to previously reported results with smaller number of tagged studies.</p>
+            </td>
+          </tr>
 
-    <!-- Templates -->
-    <script id="tweet" type="text/html">
-      {{#rows}}
-        <p><span class="quote">&ldquo;</span> {{{tweet}}} <span class="quote"> &rdquo;</span></p>
+          <!-- Simulating Dual-Energy X-Ray Absorptiometry in CT Using Deep Learning Segmentation Cascade -->
+          <tr>
+            <td style="width: 35%; text-align: center"  onmouseout="dexa_stop()" onmouseover="dexa_start()">
+              <div class="one" style="width: 100%">
+                <div class="two" style="width: 100%">
+                  <img src='images/after_dexa.png' style="width: 70%" id='dexa'>
+                </div>
+                <img src='images/before_dexa.png' style="width: 70%">
+              </div>
+              <script type="text/javascript">
+                function dexa_start() {
+                  document.getElementById('dexa').style.opacity = "1";
+                }
+                function dexa_stop() {
+                  document.getElementById('dexa').style.opacity = "0";
+                }
+                dexa_stop()
+              </script>
+            </td>
+            <td valign="middle" width="100%">
+              <p>
+                <a href="https://arxiv.org/pdf/1706.01671">
+                  <papertitle>Simulating Dual-Energy X-Ray Absorptiometry in CT Using Deep-Learning Segmentation Cascade</papertitle>
+                </a>
+                <br>
+                Arun Krishnaraj, Spencer Barrett, Orna Bregman-Amitai , Michael Cohen-Sfady, <strong>Amir Bar</strong>, David Chettrit, Mila Orlovsky, Eldad Elnekave
+                <br>
+                <em>Journal of the American College of Radiology</em>, 2019
+                <p>Osteoporosis is an underdiagnosed condition despite effective screening modalities. The purpose of this study was to describe a method to simulate lumbar DEXA scores from routinely acquired CT studies using a machine-learning algorithm.</p>
+            </td>
+          </tr>
 
-      {{/rows}}
-    </script>
+          <!--PHT-bot: a deep learning based system for automatic risk stratification of COPD patients based upon signs of pulmonary hypertension -->
+          <tr>
+            <td style="width: 35%; text-align: center" onmouseout="pht_stop()" onmouseover="pht_start()">
+              <div class="one" style="width: 100%">
+                <div class="two" id='pht' style="width: 100%">
+                  <img src='images/pht_after.png' style="width: 70%; margin-top: 20%">
+                </div>
+                <img src='images/pht_before.png' style="width: 70%; margin-top: 20%">
+              </div>
+              <script type="text/javascript">
+                function pht_start() {
+                  document.getElementById('pht').style.opacity = "1";
+                }
+                function pht_stop() {
+                  document.getElementById('pht').style.opacity = "0";
+                }
+                pht_stop()
+              </script>
+            </td>
+            <td valign="middle" width="75%">
+              <p>
+                <a href="https://arxiv.org/pdf/1905.11773">
+                  <papertitle>PHT-bot: a deep learning based system for automatic risk stratification of COPD patients based upon signs of pulmonary hypertension</papertitle>
+                </a>
+                <br>
+                David Chettrit, Orna Bregman Amitai, Itamar Tamir, <strong>Amir Bar</strong> and Eldad Elnekave
+                <br>
+                <em>SPIE</em>, 2019
+                <br>
+                <p></p>
+                <p>Chronic Obstructive Pulmonary Disease (COPD) is a leading cause of morbidity and mortality worldwide. We apply deep learning algorithm to detect those at risk.</p>
+            </td>
+          </tr>
 
-    <!-- JavaScript -->
-      <script type="text/javascript">
-        document.addEventListener('DOMContentLoaded', function() {
-          var URL2 = '1bDODDofnB_ixxoLSW5bLsRH7-AokwiJAL2_93DwHJDM' // tweet
+          <!--Language Generation with Recurrent Generative Adversarial Networks without Pre-training  -->
+          <tr>
+            <td style="width: 35%; text-align: left">
+              <div class="one" style="width: 70%;  margin-left: auto; margin-right: auto;">
+                <code><h4>Sample:</h4> The man allowed that about health captain played that alleged to Marks live up in the club comes the handed up moved to a brief</code>
+              </div>
+            </td>
+            <td valign="middle" width="75%" >
+              <p>
+                <a href="https://arxiv.org/abs/1706.01399">
+                  <papertitle>Language Generation with Recurrent Generative Adversarial Networks without Pre-training</papertitle>
+                </a>
+                <br>
+                Ofir Press*, <strong>Amir Bar*</strong>, Ben Bogin*, Jonathan Berant, Lior Wolf
+                <br>
+                <em>1st Workshop on Learning to Generate Natural Language at ICML</em>, 2017
+                <br>
+                <a href="https://github.com/amirbar/rnn.wgan">Code</a>
+                <p>We show that recurrent neural networks can be trained to generate text with GANs from scratch and vastly improve the quality of generated sequences compared to a convolutional baseline.</p>
+            </td>
+          </tr>
 
-          Tabletop.init({ key: URL2, callback: buildTweet,  simpleSheet: true })
-        })
-      </script>
+          <!--Compression Fractures Detection on CT  -->
+          <tr>
+            <td style="width: 35%; text-align: center">
+              <div class="one" style="width: 100%;">
+                <div class="two" style="width: 100%">
+                  <img src='images/cf_after.png' style="width: 70%" id="cf" onmouseout="cf_stop()" onmouseover="cf_start()">
+                </div>
+                <img src='images/cf_before.png' style="width: 70%">
+              </div>
+              <script type="text/javascript">
+                function cf_start() {
+                  document.getElementById('cf').style.opacity = "1";
+                }
+                function cf_stop() {
+                  document.getElementById('cf').style.opacity = "0";
+                }
+                cf_stop()
+              </script>
+            </td>
+            <td valign="middle" width="75%">
+              <p>
+                <a href="https://arxiv.org/pdf/1706.01671">
+                  <papertitle>Compression Fractures Detection on CT</papertitle>
+                </a>
+                <br>
+                   <strong>Amir Bar</strong>, Lior Wolf, Orna Bregman Amitai, Eyal Toledano, Eldad Elnekave
+                <br>
+                <em>SPIE</em>, 2017
+                <br>
+                Press <a href="https://www.businesswire.com/news/home/20170117005827/en/Zebra-Medical-Vision-Announces-New-Algorithm-Detect">1</a> <a href="https://www.calcalist.co.il/internet/articles/0,7340,L-3705948,00.html">2</a>
+                <p>The presence of a vertebral compression fracture is highly indicative of osteoporosis and represents the single most robust predictor for development of a second osteoporotic fracture in the spine or elsewhere. We present an automated method for detecting spine compression fractures in Computed Tomography (CT) scans.</p>
+            </td>
+          </tr>
 
-  </body>
-</html>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
