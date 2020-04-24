@@ -339,8 +339,11 @@
 
           <tr>
             <td style="width: 35%; text-align: center">
-              <div>
-                <img src='images/taco.png' style="width: 70%">
+                <div class="one" style="width: 100%;">
+                <div class="two" style="width: 100%">
+                  <img src='images/taco.png' style="width: 70%" id="taco" onmouseout="taco_stop()" onmouseover="taco_start()">
+                </div>
+                <img src='images/taco.jpg' style="width: 70%">
               </div>
             </td>
             <td valign="middle" width="75%">
@@ -350,6 +353,15 @@
             </td>
           </tr>
         </table>
+        <script type="text/javascript">
+        function taco_start() {
+          document.getElementById('taco').style.opacity = "1";
+        }
+        function taco_stop() {
+          document.getElementById('taco').style.opacity = "0";
+        }
+        taco_stop()
+       </script>
 
 
       </td>
