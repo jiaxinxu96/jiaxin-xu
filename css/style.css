@@ -1,10 +1,10 @@
-body {font-family: Source Sans Pro; text-align: center; line-height: 1.2em; color: #333; margin: 0;}
+body {font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; text-align: center; line-height: 1.2em; color: #333; margin: 0;}
 a {color: #13338e; text-decoration: none; }
 
 h1 {
 font-weight: 900;
 font-size: 50px;
-font-family: Playfair Display;
+font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 padding: 0 20px 20px 20px;
 line-height: 1.2em;
 margin-top: 0;
@@ -23,7 +23,7 @@ p {font-size: 23px; line-height: 1.3em;}
 #tweet p a {color: #777; font-weight: 200; text-decoration: underline;}
 #tweet p a:hover {color: #17FFE4;}
 #tweet {padding: 20px; margin: 0 auto; margin-top: 20px; background: #F7F7F7; border-radius: 2px; color: #777;}
-.meta {font-family: Courier New; text-transform: uppercase; font-size: 10px;}
+.meta {font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; font-size: 10px;}
 .load {color: #eee; letter-spacing: .2em; font-size: 12px; }
 .inline-list {list-style: none; margin: 0; padding: 0;}
 .inline-list li {display: inline-block; }
