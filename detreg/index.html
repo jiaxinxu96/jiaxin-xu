@@ -109,6 +109,14 @@
 
 
 <head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108048997-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-108048997-1');
+  </script>
 
     <title>DETReg: Unsupervised Pretraining with Region Priors for Object Detection</title>
     <meta property="og:title" content="DETReg: Unsupervised Pretraining with Region Priors for Object Detection"/>
@@ -213,14 +221,14 @@ We show how to combine these two signals to train the Deformable DETR detection 
 <p>
     Our approach to the problem is based on the observation that learning good detectors requires learning to detect objects in the pretraining stage. To accomplish this, we present a new framework called ``DEtection with TRansformers based on Region priors'', or <b>DETReg</b>.
     DETReg can be used to train a detector on unlabeled data by introducing two key pretraining tasks: ``Object Localization Task'' and the ``Object Embedding Task''. The goal of the first is to train the model to localize objects, regardless of their categories. However, learning to localize objects is not enough, and detectors must also classify objects. Towards this end, we introduce the ``Object Embedding Task'', which is geared towards understanding the <b>categories</b> of objects in the image. Inspired by the simplicity of recent transformers for object detection, we choose to base our approach on the Deformable DETR architecture, which simplifies the implementation and is very fast to train.</p>
-<center><img src="data/model_figure_v2.png" align="middle"></center>
+<center><img src="/detreg/data/model_figure_v2.png" align="middle"></center>
 <table align=center>
     <center><h1 id="viz">Visualization</h1></center>
 </table>
 <p>
     Qualitative examples of DETReg unsupervised box predictions. This shows the pixel-level gradient norm for the x/y bounding box center and the object embedding. These gradient norms indicate how sensitive the predicted values are to perturbations of the input pixels. For the first three columns, DETReg attends to the object edges for the x/y predictions and z for the predicted object embedding. The final column shows a limitation where the space surrounding the object is used for the embedding.
 </p>
-<center><img src="data/viz.png" align="middle"></center>
+<center><img src="/detreg/data/viz.png" align="middle"></center>
 
 <br><br>
 <hr>
