@@ -1,0 +1,8 @@
+@misc{bar2021detreg,
+      title={DETReg: Unsupervised Pretraining with Region Priors for Object Detection},
+      author={Amir Bar and Xin Wang and Vadim Kantorov and Colorado J Reed and Roei Herzig and Gal Chechik and Anna Rohrbach and Trevor Darrell and Amir Globerson},
+      year={2021},
+      eprint={2106.04550},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
