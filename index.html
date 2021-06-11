@@ -133,6 +133,39 @@
           </tr>
         </table>
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+          <!-- DETReg -->
+          <tr>
+            <td style="width: 35%; text-align: center">
+              <div class="one" style="width: 100%;">
+                <div class="two" style="width: 100%">
+                  <img src='images/detreg_before.png' style="width: 80%" id="detreg" onmouseout="detreg_start()" onmouseover="detreg_stop()">
+                </div>
+                <img src='images/detreg_after.png' style="width: 80%">
+              </div>
+              <script type="text/javascript">
+                function detreg_start() {
+                  document.getElementById('detreg').style.opacity = "1";
+                }
+                function detreg_stop() {
+                  document.getElementById('detreg').style.opacity = "0";
+                }
+              </script>
+            </td>
+            <td valign="middle" width="75%">
+              <p>
+                <a href="https://arxiv.org/abs/2106.04550">
+                <papertitle>DETReg: Unsupervised Pretraining with Region Priors for Object Detection</papertitle> </a>
+                <br>
+                <b>Amir Bar</b>, Xin Wang, Vadim Kantorov, Colorado J Reed, Roei Herzig, Gal Chechik, Anna Rohrbach, Trevor Darrell, Amir Globerson
+                <br>
+                <em>In submission</em>, NeurIPS 2021 <br>
+                <a href="https://www.amirbar.net/detreg/">Project Page</a> | <a href="https://github.com/amirbar/detreg"> Code </a>
+                <br>
+                <p>Pretraining transformers to localize potential objects improves object detection.
+                </p>
+                </td>
+          </tr>
+
           <!-- Compositional Video Synthesis with Action Graphs -->
           <tr>
             <td style="width: 35%; text-align: center">
