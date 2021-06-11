@@ -203,6 +203,7 @@
 
 <br><br>
 <hr>
+
 <table align=center>
     <center><h1>Abstract</h1></center>
 </table>
@@ -212,8 +213,10 @@ Motivated by the two tasks underlying object detection: <b>localization</b> and 
 The categorization signal comes from an object embedding loss that encourages invariant object representations, from which the object category can be inferred.
 We show how to combine these two signals to train the Deformable DETR detection architecture from large amounts of unlabeled data. DETReg improves the performance over competitive baselines and previous self-supervised methods on standard benchmarks like MS COCO and PASCAL VOC. DETReg also outperforms previous supervised and unsupervised baseline approaches on low-data regime when trained with only 1%, 2%, 5%, and 10% of the labeled data on MS COCO.
 
-<br>
+<br><br><br>
+
 <hr>
+<br>
 
 <table align=center>
     <center><h1 id="model">DETReg Pretext task</h1></center>
@@ -221,23 +224,29 @@ We show how to combine these two signals to train the Deformable DETR detection 
 <p>
     Our approach to the problem is based on the observation that learning good detectors requires learning to detect objects in the pretraining stage. To accomplish this, we present a new framework called ``DEtection with TRansformers based on Region priors'', or <b>DETReg</b>.
     DETReg can be used to train a detector on unlabeled data by introducing two key pretraining tasks: ``Object Localization Task'' and the ``Object Embedding Task''. The goal of the first is to train the model to localize objects, regardless of their categories. However, learning to localize objects is not enough, and detectors must also classify objects. Towards this end, we introduce the ``Object Embedding Task'', which is geared towards understanding the <b>categories</b> of objects in the image. Inspired by the simplicity of recent transformers for object detection, we choose to base our approach on the Deformable DETR architecture, which simplifies the implementation and is very fast to train.</p>
-<center><img src="/detreg/data/model_figure_v2.png" align="middle"></center>
+<center><img src="data/model_figure_v2.png" align="middle"></center>
+<br><br>
+
+<hr>
+<br>
+
 <table align=center>
     <center><h1 id="viz">Visualization</h1></center>
 </table>
 <p>
     Qualitative examples of DETReg unsupervised box predictions. This shows the pixel-level gradient norm for the x/y bounding box center and the object embedding. These gradient norms indicate how sensitive the predicted values are to perturbations of the input pixels. For the first three columns, DETReg attends to the object edges for the x/y predictions and z for the predicted object embedding. The final column shows a limitation where the space surrounding the object is used for the embedding.
 </p>
-<center><img src="/detreg/data/viz.png" align="middle"></center>
+<center><img src="data/viz.png" align="middle"></center>
 
 <br><br>
 <hr>
 <br>
+
 <table align=center>
     <center><h1>Paper</h1></center>
     <tr>
         <td><a href="https://arxiv.org/abs/2106.04550"><img class="layered-paper-big" style="height:175px; width: 150px; margin-bottom: 50px"
-                                                                src="/detreg/data/paper.png"/></a></td>
+                                                                src="data/paper.png"/></a></td>
         <td><a href="https://arxiv.org/abs/2106.04550"></a></td>
         <td>
         <span style="font-size:14pt"> <i>DETReg: Unsupervised Pretraining with Region Priors for Object Detection</i><br>Amir Bar, Xin Wang, Vadim Kantorov, Colorado J Reed, Roei Herzig, <br>Gal Chechik, Anna Rohrbach, Trevor Darrell, Amir Globerson<br>
@@ -250,9 +259,23 @@ We show how to combine these two signals to train the Deformable DETR detection 
         <span style="font-size:4pt"><a href="https://arxiv.org/abs/2106.04550"><br></a></span>
     </tr>
 </table>
+<hr>
+    <br><br>
+
+<table align=center>
+    <center><h1>Related Works</h1></center>
+    <tr>
+        <td>If you found our work interesting, please also consider looking into some closely related works like <a href="https://arxiv.org/abs/2103.12902">RegionSim</a>, <a href="https://arxiv.org/abs/2011.09094">UP-DETR</a>, <a href="https://arxiv.org/abs/2006.09882">SwAV</a>.
+        </td>
+    </tr>
+</table>
+
+    <br><br>
 
 
 <hr>
+    <br><br>
+
 <table align=center style="margin-bottom: 50px">
     <tr>
         <td>
