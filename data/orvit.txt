@@ -1,0 +1,6 @@
+@article{herzig2021object,
+  title={Object-region video transformers},
+  author={Herzig, Roei and Ben-Avraham, Elad and Mangalam, Karttikeya and Bar, Amir and Chechik, Gal and Rohrbach, Anna and Darrell, Trevor and Globerson, Amir},
+  journal={arXiv preprint arXiv:2110.06915},
+  year={2021}
+}
